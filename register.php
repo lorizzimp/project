@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>ระบบจองห้องประชุมregister</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/bootstrap-datepicker3.min.css" rel="stylesheet">
 </head>
 
 <body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
 <table width="971" height="852" border="0" align="center">
   <tbody>
     <tr>
@@ -35,114 +41,64 @@
     </tr>
     <tr>
       <td height="70"><input type="image" name="imageField6" id="imageField6" src="image/img11.png"></td>
-      <td width="378" align="center" valign="middle" bgcolor="#BDD5F6"><label for="textfield">ID:</label>
-      <input type="text" name="textfield" id="textfield"></td>
-      <td width="386" align="center" valign="middle" bgcolor="#BDD5F6"><label for="password">Password:</label>
-      <input type="password" name="password" id="password"></td>
+      <td width="378" align="center" valign="middle" bgcolor="#BDD5F6">
+	      <div class="form-group">
+	      	<label for="username" class="col-sm-3 control-label">Username:</label>
+		    <div class="col-sm-7">
+		      <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+		    </div>
+	      </div>
+      </td>
+      <td width="386" align="center" valign="middle" bgcolor="#BDD5F6">
+      	<div class="form-group">
+	      	<label for="Username" class="col-sm-3 control-label">Password:</label>
+		    <div class="col-sm-7">
+		      <input type="Password" class="form-control" name="password" id="password" placeholder="Password">
+		    </div>
+	   	</div>
+      </td>
     </tr>
     <tr>
       <td height="70"><input type="image" name="imageField7" id="imageField7" src="image/img02.png"></td>
       <td width="378" align="center" valign="middle" bgcolor="#BDD5F6">&nbsp;</td>
-      <td width="386" align="center" valign="middle" bgcolor="#BDD5F6"><label for="password2">Password again:</label>
-      <input type="password" name="password2" id="password2"></td>
+      <td width="386" align="center" valign="middle" bgcolor="#BDD5F6">
+      	<div class="form-group">
+	      	<label for="repassword" class="col-sm-3 control-label">Repeat Password:</label>
+		    <div class="col-sm-7">
+		      <input type="Password" class="form-control" name="repassword" id="repassword" placeholder="Repeat Password">
+		    </div>
+	   	</div>
+      </td>
     </tr>
     <tr>
       <td height="70"><input type="image" name="imageField8" id="imageField8" src="image/img03.png"></td>
-      <td width="378" align="center" valign="middle" bgcolor="#BDD5F6"><label for="textfield2">ชื่อ:</label>
-      <input type="text" name="textfield2" id="textfield2"></td>
-      <td width="386" align="center" valign="middle" bgcolor="#BDD5F6"><label for="textfield3">นามสกุล:</label>
-      <input type="text" name="textfield3" id="textfield3"></td>
+      <td width="378" align="center" valign="middle" bgcolor="#BDD5F6">
+      	<div class="form-group">
+	      	<label for="name" class="col-sm-3 control-label">Name:</label>
+		    <div class="col-sm-7">
+		      <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+		    </div>
+	   	</div>
+      </td>
+      <td width="386" align="center" valign="middle" bgcolor="#BDD5F6">
+      	<div class="form-group">
+	      	<label for="lastname" class="col-sm-3 control-label">Lastname:</label>
+		    <div class="col-sm-7">
+		      <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Lastname">
+		    </div>
+	   	</div>
+      </td>
     </tr>
     <tr>
       <td height="70"><input type="image" name="imageField9" id="imageField9" src="image/img04.png"></td>
-      <td colspan="2" align="center" valign="middle" bgcolor="#BDD5F6"><label for="select">เกิดวันที่:</label>
-        <select name="select" id="select">
-          <option selected>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
-          <option>13</option>
-          <option>14</option>
-          <option>15</option>
-          <option>16</option>
-          <option>17</option>
-          <option>18</option>
-          <option>19</option>
-          <option>20</option>
-          <option>21</option>
-          <option>22</option>
-          <option>23</option>
-          <option>24</option>
-          <option>25</option>
-          <option>26</option>
-          <option>27</option>
-          <option>28</option>
-          <option>29</option>
-          <option>30</option>
-          <option>31</option>
-      </select>  <label for="select2">เดือน:</label>
-      <select name="select2" id="select2">
-        <option>มกราคม</option>
-        <option>กุมภาพันธ์</option>
-        <option>มีนาคม</option>
-        <option>เมษายน</option>
-        <option>พฤษภาคม</option>
-        <option>มิถุนายน</option>
-        <option>กรกฎาคม</option>
-        <option>สิงหาคม</option>
-        <option>กันยายน</option>
-        <option>ตุลาคม</option>
-        <option>พฤศจิกายน</option>
-        <option>ธันวาคม</option>
-      </select> 
-      ปี
-      <label for="select3">:</label>
-      <select name="select3" id="select3">
-        <option>2535</option>
-        <option>2534</option>
-        <option>2533</option>
-        <option>2532</option>
-        <option>2531</option>
-        <option>2530</option>
-        <option>2529</option>
-        <option>2528</option>
-        <option>2527</option>
-        <option>2526</option>
-        <option>2525</option>
-        <option>2524</option>
-        <option>2523</option>
-        <option>2522</option>
-        <option>2521</option>
-        <option>2520</option>
-        <option>2519</option>
-        <option>2518</option>
-        <option>2517</option>
-        <option>2516</option>
-        <option>2515</option>
-        <option>2514</option>
-        <option>2513</option>
-        <option>2512</option>
-        <option>2511</option>
-        <option>2510</option>
-        <option>2509</option>
-        <option>2508</option>
-        <option>2507</option>
-        <option>2506</option>
-        <option>2505</option>
-        <option>2504</option>
-        <option>2503</option>
-        <option>2502</option>
-        <option>2501</option>
-        <option>2500</option>
-      </select></td>
+      <td colspan="2" align="center" valign="middle" bgcolor="#BDD5F6">
+      <div class="form-group">
+	      	<label for="DoB" class="col-sm-3 control-label">Date of Birth:</label>
+		    <div class="col-sm-7">
+		      <input type="text" class="form-control" name="DoB" id="DoB" placeholder="Date of Birth">
+		    </div>
+	   	</div>
+        </td>
     </tr>
     <tr>
       <td height="70"><input type="image" name="imageField11" id="imageField11" src="image/img06.png"></td>
@@ -172,5 +128,12 @@
     </tr>
   </tbody>
 </table>
+<script type="text/javascript">
+$('#DoB').datepicker({
+    format: "yyyy-mm-dd",
+    clearBtn: true,
+    autoclose: true
+});
+</script>
 </body>
 </html>

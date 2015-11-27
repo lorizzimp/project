@@ -52,8 +52,8 @@
       <td height="70"><input type="image" name="imageField11" id="imageField11" src="image/img06.png"></td>
       <td width="378" align="center" valign="middle" colspan="2">
       <form id="form1" name="form1" method="post" action="loginAction.php">
-      	ID:<input type="text" class="form-control" name="username" id="username" required>
-      	Password:<input type="password" class="form-control" name="password" id="password" required>
+      	ID:<input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+      	Password:<input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
       </form>
       </td>
     </tr>
